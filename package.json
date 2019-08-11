@@ -1,0 +1,19 @@
+{
+  "name": "github-nlib-web-app-template",
+  "version": "1.0.0",
+  "description": "The git hub nlib web application template project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chumpon-asaneerat/github-nlib-web-app-template.git"
+  },
+  "author": "Chumpon Asaneerat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chumpon-asaneerat/github-nlib-web-app-template/issues"
+  },
+  "homepage": "https://github.com/chumpon-asaneerat/github-nlib-web-app-template#readme"
+}
