@@ -7,7 +7,7 @@ const wsvr = new WebServer();
 const routes = {
     /** @type {WebServer.RequestHandler} */
     home: (req, res, next) => {
-        res.sendFile(__dirname + '/index.html')
+        WebServer.sendFile(req, res, 'index.html')
     },
     /** @type {WebServer.RequestHandler} */
     getJson: (req, res, next) => {
@@ -15,12 +15,12 @@ const routes = {
             name: 'joe',
             value: Date.now()
         }
-        wsvr.sendJson(req, res, data);
+        WebServer.sendJson(req, res, data);
     },
     /** @type {WebServer.RequestHandler} */
     postJson: (req, res, next) => {
         let data = { result: 'success' }
-        wsvr.sendJson(req, res, data);
+        WebServer.sendJson(req, res, data);
     }
 }
 
