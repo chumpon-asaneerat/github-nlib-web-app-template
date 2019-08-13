@@ -28,9 +28,8 @@ const routes = class {
      * getJson
      * @param {Request} req The Request.
      * @param {Response} res The Response.
-     * @param {WebServer.RequestHandler} next The RequestHandler.
      */
-    static getJson(req, res, next) {
+    static getJson(req, res) {
         let data = {
             name: 'Joe',
             value: Date.now()
@@ -41,9 +40,8 @@ const routes = class {
      * postJson
      * @param {Request} req The Request.
      * @param {Response} res The Response.
-     * @param {WebServer.RequestHandler} next The RequestHandler.
      */
-    static postJson(req, res, next) {
+    static postJson(req, res) {
         let data = {
             greating: 'Welcome ' + req.body.name,
             value: Date.now()
