@@ -34,7 +34,8 @@ const routes = class {
             name: 'Joe',
             value: Date.now()
         }
-        WebServer.sendJson(req, res, data);
+        let ret = nlib.NResult.data(data);
+        WebServer.sendJson(req, res, ret);
     }
     /**
      * postJson
@@ -46,7 +47,8 @@ const routes = class {
             greating: 'Welcome ' + req.body.name,
             value: Date.now()
         }
-        WebServer.sendJson(req, res, data);
+        let ret = nlib.NResult.data(data);
+        WebServer.sendJson(req, res, ret);
     }
 }
 
